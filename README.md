@@ -84,9 +84,7 @@ Name the project _Todo_, choose a **Location** and click **OK**.
 
   > **Note 3**: This hands on lab will work with either Visual Studio 2013 or Visual Studio 2015. If you are using Visual Studio 2015 and don't see the *Host in the Cloud* option, the most likely reason is that you need to install the [latest release of the Microsoft Azure SDK for Visual Studio 2015](http://go.microsoft.com/fwlink/?linkid=518003&clcid=0x409).
 
-1. The **Configure Microsoft Azure Website** dialog box will appear, using an auto-generated site name. Select a region (e.g.: _West US_). Also take note of which account you are currently signed into in the dialog box. You want to make sure that this is the account your Azure subscription is attached to (usually a Microsoft account).
-
-	This project does not require a database, as it will be using a new Azure DocumentDB account created later in the Azure Preview portal, so make sure **No database** is selected in the **Database server** field.
+1. The **Create App Service** dialog box will appear, using an auto-generated web app name. Create or reuse resource groups and/or app service plans, for this demo your decison won't matter. Take note of which account you are currently signed into in the dialog box. You want to make sure that this is the account your Azure subscription is attached to (usually a Microsoft account).
 
 1. Click **OK**.
 
@@ -94,7 +92,7 @@ Name the project _Todo_, choose a **Location** and click **OK**.
 
 	_Configuring Microsoft Azure Website_
 
-The project will be created, and the authentication options and Azure Website options will be automatically configured with the project. The ASP.NET application can be run locally, if desired.
+The project will be created, and the authentication options and Azure Web App options will be automatically configured with the project. The ASP.NET application can be run locally, if desired.
 
 Next you will add DocumentDB to this project and build the application.
 
@@ -472,11 +470,7 @@ In this task you will add code in the **ItemController** class to handle the fol
 	```
 
 
-1. Switch to the browser instance in which you have the Azure Preview Portal open. Verify that the DocumentDB account has been created by looking for a **Created DocumentDB** notification in the **Notifications** Hub. If there is one, click it. If not, wait until the account finishes creating and the notification appears.
-
-	![creation-succeeded-notification-hub](./images/creation-succeeded-notification-hub.png?raw=true "Creation succeeded in Notification Hub")
-
-	_Creation succeeded in Notification Hub_
+1. Switch to the browser instance in which you have the Azure Preview Portal open. Verify that the DocumentDB account has been created by looking for your new DocumentDB account under all resources
 
 1. Click on your new **DocumentDB** account under the resource group.
 
