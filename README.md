@@ -21,9 +21,9 @@ This lab includes instructions for the following tasks:
 <a name="creating-a-documentdb-database-account"></a>
 ## Creating a DocumentDB database account
 
-To use Microsoft Azure DocumentDB, you must create a DocumentDB account.  This task describes how to create a DocumentDB account in the Azure preview management portal.
+To use Microsoft Azure DocumentDB, you must create a DocumentDB account.  This task describes how to create a DocumentDB account in the Azure management portal.
 
-1. Sign in to the [preview management portal](https://portal.azure.com/).
+1. Sign in to the [management portal](https://portal.azure.com/).
 
 1. Click **NEW** and select **Data + storage**, then  **DocumentDB** in order to create a new DocumentDB account.  
 
@@ -470,7 +470,7 @@ In this task you will add code in the **ItemController** class to handle the fol
 	```
 
 
-1. Switch to the browser instance in which you have the Azure Preview Portal open. Verify that the DocumentDB account has been created by looking for your new DocumentDB account under all resources
+1. Switch to the browser instance in which you have the Azure Portal open. Verify that the DocumentDB account has been created by looking for your new DocumentDB account under all resources
 
 1. Click on your new **DocumentDB** account under all resources.
 
