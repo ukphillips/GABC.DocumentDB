@@ -472,23 +472,7 @@ In this task you will add code in the **ItemController** class to handle the fol
 
 1. Switch to the browser instance in which you have the Azure Preview Portal open. Verify that the DocumentDB account has been created by looking for your new DocumentDB account under all resources
 
-1. Click on your new **DocumentDB** account under the resource group.
-
-	> **Note:** The default consistency of the DocumentDB account will be set to Session. You can adjust the default consistency setting via the [preview management portal](https://portal.azure.com/#gallery/Microsoft.DocumentDB).
-
-	![The new DocumentDB account has been created](./images/new-documentdb-account-created.png?raw=true)
-
-	_The new DocumentDB account has been created_
-
-	> **Note:** You can also access your existing DocumentDB accounts from the **Browse** blade.
-
-	> ![Accessing the DocumentDB accounts from the Browse blade](./images/accessing-the-documentdb-accounts-from-browse.png?raw=true)
-
-	> _Accessing the DocumentDB accounts from the Browse blade_
-
-	> ![Accessing the just created DocumentDB account](./images/accessing-the-new-documentdb-account.png?raw=true)
-
-	> _Accessing the DocumentDB account just created_
+1. Click on your new **DocumentDB** account under all resources.
 
 1. Now, click the **KEYS** button to open the **Keys** blade. Copy the endpoint **URI** and paste the value in the **Web.config** file open in Visual Studio, in place of the **URI** placeholder.
 
@@ -847,15 +831,15 @@ To delete the website follow these steps:
 
 1. In your browser, go to [the preview management portal](https://portal.azure.com/), and sign in with your Azure credentials.
 
-2. Click **BROWSE** in the Navigation hub on the left and then **Web Apps**.
+2. Click **App Services** in the navigation on the left and then select your Todo app service.
 
 	![Browse websites](images/browse-websites.png?raw=true)
 
-	_Browsing websites_
+	_Browsing app services_
 
-	A blade displaying all websites will be displayed.
+	A blade displaying all App Services will be displayed.
 
-1. Select your website and click **DELETE** in the details blade.
+1. Select your app and click **DELETE** in the details blade.
 
 	![Clicking Delete website](images/clicking-delete-website.png?raw=true)
 
@@ -863,7 +847,7 @@ To delete the website follow these steps:
 
 4. In the **Delete Confirmation** dialog, click **Yes**.
 
-	The website will be deleted. You will see a notification in the **Notifications** hub.
+	The web app will be deleted.
 
 To delete the DocumentDB account proceed in a similar way:
 
