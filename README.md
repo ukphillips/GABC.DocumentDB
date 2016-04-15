@@ -829,7 +829,7 @@ In this task you will learn how to delete the resources created created in the p
 
 To delete the website follow these steps:
 
-1. In your browser, go to [the preview management portal](https://portal.azure.com/), and sign in with your Azure credentials.
+1. In your browser, go to [the management portal](https://portal.azure.com/), and sign in with your Azure credentials.
 
 2. Click **App Services** in the navigation on the left and then select your Todo app service.
 
@@ -851,7 +851,7 @@ To delete the website follow these steps:
 
 To delete the DocumentDB account proceed in a similar way:
 
-1. Click **BROWSE** in the Navigation hub on the left and then **DocumentDB accounts**.
+1. Click **DocumentDB Accounts** in the navigation on the left.
 
 1. Click your documentDB account and in the details blade that opens, click **Delete**.
 
