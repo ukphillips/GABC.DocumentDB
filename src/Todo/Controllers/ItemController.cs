@@ -97,5 +97,11 @@ namespace Todo.Controllers
             var item = DocumentDBRepository.GetItem(id);
             return this.View(item);
         }
+
+        public ActionResult MarkAll()
+        {
+            var updated = DocumentDBRepository.MarkAllAsCompleted();
+            return this.RedirectToAction("Index");
+        }
     }
 }
