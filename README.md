@@ -61,7 +61,7 @@ In this task you will create a new ASP.NET MVC project and configure a Microsoft
 
     _Creating a New Project_
 
-	> **Note:** You can open the end solution from [end/Todo](end/Todo) and configure it according to the instructions in [Setting up the end solution](end).
+	> **Note:** You can open the end solution from [src/Todo](src/Todo) and configure it according to the instructions in [Setting up the end solution](end).
 
 1. In the **New Project** dialog box, select **ASP.NET Web Application** under the **Visual C# | Web** tab. Make sure **.NET Framework 4.5.2** is selected.
 Name the project _Todo_, choose a **Location** and click **OK**.
