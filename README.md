@@ -21,9 +21,9 @@ This lab includes instructions for the following tasks:
 <a name="creating-a-documentdb-database-account"></a>
 ## Creating a DocumentDB database account
 
-To use Microsoft Azure DocumentDB, you must create a DocumentDB account.  This task describes how to create a DocumentDB account in the Azure preview management portal.
+To use Microsoft Azure DocumentDB, you must create a DocumentDB account.  This task describes how to create a DocumentDB account in the Azure management portal.
 
-1. Sign in to the [preview management portal](https://portal.azure.com/).
+1. Sign in to the [management portal](https://portal.azure.com/).
 
 1. Click **NEW** and select **Data + storage**, then  **DocumentDB** in order to create a new DocumentDB account.  
 
@@ -61,7 +61,7 @@ In this task you will create a new ASP.NET MVC project and configure a Microsoft
 
     _Creating a New Project_
 
-	> **Note:** You can open the end solution from [end/Todo](end/Todo) and configure it according to the instructions in [Setting up the end solution](end).
+	> **Note:** You can open the end solution from [src/Todo](src/Todo) and configure it according to the instructions in [Setting up the end solution](end).
 
 1. In the **New Project** dialog box, select **ASP.NET Web Application** under the **Visual C# | Web** tab. Make sure **.NET Framework 4.5.2** is selected.
 Name the project _Todo_, choose a **Location** and click **OK**.
@@ -84,9 +84,7 @@ Name the project _Todo_, choose a **Location** and click **OK**.
 
   > **Note 3**: This hands on lab will work with either Visual Studio 2013 or Visual Studio 2015. If you are using Visual Studio 2015 and don't see the *Host in the Cloud* option, the most likely reason is that you need to install the [latest release of the Microsoft Azure SDK for Visual Studio 2015](http://go.microsoft.com/fwlink/?linkid=518003&clcid=0x409).
 
-1. The **Configure Microsoft Azure Website** dialog box will appear, using an auto-generated site name. Select a region (e.g.: _West US_). Also take note of which account you are currently signed into in the dialog box. You want to make sure that this is the account your Azure subscription is attached to (usually a Microsoft account).
-
-	This project does not require a database, as it will be using a new Azure DocumentDB account created later in the Azure Preview portal, so make sure **No database** is selected in the **Database server** field.
+1. The **Create App Service** dialog box will appear, using an auto-generated web app name. Create or reuse resource groups and/or app service plans, for this demo your decison won't matter. Take note of which account you are currently signed into in the dialog box. You want to make sure that this is the account your Azure subscription is attached to (usually a Microsoft account).
 
 1. Click **OK**.
 
@@ -94,7 +92,7 @@ Name the project _Todo_, choose a **Location** and click **OK**.
 
 	_Configuring Microsoft Azure Website_
 
-The project will be created, and the authentication options and Azure Website options will be automatically configured with the project. The ASP.NET application can be run locally, if desired.
+The project will be created, and the authentication options and Azure Web App options will be automatically configured with the project. The ASP.NET application can be run locally, if desired.
 
 Next you will add DocumentDB to this project and build the application.
 
@@ -472,29 +470,9 @@ In this task you will add code in the **ItemController** class to handle the fol
 	```
 
 
-1. Switch to the browser instance in which you have the Azure Preview Portal open. Verify that the DocumentDB account has been created by looking for a **Created DocumentDB** notification in the **Notifications** Hub. If there is one, click it. If not, wait until the account finishes creating and the notification appears.
+1. Switch to the browser instance in which you have the Azure Portal open. Verify that the DocumentDB account has been created by looking for your new DocumentDB account under all resources
 
-	![creation-succeeded-notification-hub](./images/creation-succeeded-notification-hub.png?raw=true "Creation succeeded in Notification Hub")
-
-	_Creation succeeded in Notification Hub_
-
-1. Click on your new **DocumentDB** account under the resource group.
-
-	> **Note:** The default consistency of the DocumentDB account will be set to Session. You can adjust the default consistency setting via the [preview management portal](https://portal.azure.com/#gallery/Microsoft.DocumentDB).
-
-	![The new DocumentDB account has been created](./images/new-documentdb-account-created.png?raw=true)
-
-	_The new DocumentDB account has been created_
-
-	> **Note:** You can also access your existing DocumentDB accounts from the **Browse** blade.
-
-	> ![Accessing the DocumentDB accounts from the Browse blade](./images/accessing-the-documentdb-accounts-from-browse.png?raw=true)
-
-	> _Accessing the DocumentDB accounts from the Browse blade_
-
-	> ![Accessing the just created DocumentDB account](./images/accessing-the-new-documentdb-account.png?raw=true)
-
-	> _Accessing the DocumentDB account just created_
+1. Click on your new **DocumentDB** account under all resources.
 
 1. Now, click the **KEYS** button to open the **Keys** blade. Copy the endpoint **URI** and paste the value in the **Web.config** file open in Visual Studio, in place of the **URI** placeholder.
 
@@ -851,17 +829,17 @@ In this task you will learn how to delete the resources created created in the p
 
 To delete the website follow these steps:
 
-1. In your browser, go to [the preview management portal](https://portal.azure.com/), and sign in with your Azure credentials.
+1. In your browser, go to [the management portal](https://portal.azure.com/), and sign in with your Azure credentials.
 
-2. Click **BROWSE** in the Navigation hub on the left and then **Web Apps**.
+2. Click **App Services** in the navigation on the left and then select your Todo app service.
 
 	![Browse websites](images/browse-websites.png?raw=true)
 
-	_Browsing websites_
+	_Browsing app services_
 
-	A blade displaying all websites will be displayed.
+	A blade displaying all App Services will be displayed.
 
-1. Select your website and click **DELETE** in the details blade.
+1. Select your app and click **DELETE** in the details blade.
 
 	![Clicking Delete website](images/clicking-delete-website.png?raw=true)
 
@@ -869,11 +847,11 @@ To delete the website follow these steps:
 
 4. In the **Delete Confirmation** dialog, click **Yes**.
 
-	The website will be deleted. You will see a notification in the **Notifications** hub.
+	The web app will be deleted.
 
 To delete the DocumentDB account proceed in a similar way:
 
-1. Click **BROWSE** in the Navigation hub on the left and then **DocumentDB accounts**.
+1. Click **DocumentDB Accounts** in the navigation on the left.
 
 1. Click your documentDB account and in the details blade that opens, click **Delete**.
 
